@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya Rai -Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: rgb(0, 0, 33);
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        nav {
+            background-color: rgb(71, 71, 229);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 90px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 25px;
+        }
+
+        .anchor {
+            text-decoration: none;
+            color: white;
+        }
+
+        .anchor :hover {
+            color: rgb(237, 171, 237);
+        }
+
+        .left {
+            font-size: 2rem;
+        }
+
+        .first {
+            display: flex;
+            justify-content: space-around;
+            margin: 23px 0;
+
+        }
+
+        .leftsection {
+            margin-top: 7rem;
+            font-size: 3rem;
+            width: 100%;
+            height: 30px;
+            justify-content: space-around;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .leftsection .btn{
+            padding: 12px;
+            background:#1e2167;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .first>div {
+            height: 100%;
+            width: 30%;
+
+        }
+
+        .rightsection {
+            justify-content: space-around;
+        }
+
+        .rightsection img {
+            width: 100%;
+            margin: 50px 0;
+        }
+
+        .purple {
+            color: violet;
+        }
+
+        .text-grey {
+            color: grey;
+        }
+
+        #element {
+            color: violet;
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+        }
+
+        .secondSection h1 {
+            font-size: 1.6rem;
+        }
+
+        .box {
+            background-color: white;
+            width: 52vw;
+            height: 2px;
+            margin: 69px 0 0 100px;
+            display: flex;
+        }
+
+        .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 100px 0 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left"> Aditya's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <a class="anchor" href="#">
+                        <li>Home</li>
+                    </a>
+                    <a class="anchor" href="#">
+                        <li>About</li>
+                    </a>
+                    <a class="anchor" href="#">
+                        <li>Services</li>
+                    </a>
+                    <a class="anchor" href="#">
+                        <li>Past Projects</li>
+                    </a>
+                    <a class="anchor" href="#">
+                        <li>Contact me</li>
+                    </a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <Section class="first">
+            <div class="leftsection">
+                HI, My name is <span class="purple">Aditya</span>
+                <div>And am an Aspiring <div id="element">Software Developer</div>
+                </div>
+                <button class="btn">Download Resume</button>
+                <button class="btn">Visit Github</button>
+
+            </div>
+            <div class="rightsection">
+                <img src="bg.png" alt="" height="600">
+            </div>
+        </Section>
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+        <!-- Setup and start animation! -->
+        <script>
+            var typed = new Typed('#element', {
+                strings: ['Software Developer', 'Web Developer'],
+                typeSpeed: 60,
+            });
+        </script>
+        <section class="secondSection">
+            <span class="text-grey">What i have done so far</span>
+            <h1>Work Experince</h1>
+            <div class="box">
+                <div class="vertical"></div>
+                <div class="vertical"></div>
+                <div class="vertical"></div>
+                <div class="vertical"></div>
+                <div class="vertical"></div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
